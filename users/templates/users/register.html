@@ -2,18 +2,13 @@
 {% load tailwind_filters %}
 
 {% block content %}
-<h1>Iniciar sesion</h1>
+<h1>Crear cuenta</h1>
 <form action="" method="post">
     {% csrf_token %}
     {{ form|crispy }}
-    <a
-        href="{% url 'register' %}" 
-    >
-        ¿No tienes cuenta?, Registrate
-    </a>
     <button 
     type="submit">
-        LOGIN    
+        Crear    
     </button>
 </form>
 {% endblock content %}
